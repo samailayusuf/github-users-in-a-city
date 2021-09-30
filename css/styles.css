@@ -52,7 +52,7 @@ button:hover{
 }
 
 .card{
-    margin:5px;
+    margin:5px auto;
     max-width:300px;
     display: flex;
     flex-direction: column;
@@ -125,6 +125,13 @@ visit-profile{
     .card{
         margin: 5px auto;
     }
+
+    .card-container { 
+        display: grid;
+        justify-content:center;
+        margin: 5px auto;
+        align-items:center;
+        text-align: center;
 
     
   }
