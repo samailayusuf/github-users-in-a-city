@@ -15,22 +15,24 @@
     <header class="header">
         <h1>Top 10 coders in the city!</h1>
         <section>
-            <input type="text" placeholder="Enter Location e.g Lagos" id="location"/>
-            <input type="text" placeholder ="Enter Language e.g PHP" id="language" />
-            <button id="submit">Search</button>
+            <input type="text" placeholder="Enter Location e.g Lagos" id="location" required/>
+            <input  type="text" placeholder ="Enter Language e.g PHP" id="language"  required/>
+            <button id="submit-button" onclick=loadData()>Search</button>
         </section> 
     </header>
 
-    <main class="card-container">
-        <div class="card">
-            <div class="card-img">
-                <img src="https://via.placeholder.com/150" />
-            </div>
-            <div class="card-body">
-                <h3>Name</h3>
-                <button id="visit-profile">Visit Profile</button>
-            </div>
+    <section id="loader">
+        <img src="img/loading.gif"/>
+    </section>
+
+    
+        <div class="welcome-text">
+            <h3 style="text-align:center">Enter Location and language to see top 10 developers in the city.</h3>
         </div>
+    
+
+    <main class="card-container">
+        
     </main>
 
     

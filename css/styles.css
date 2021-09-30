@@ -19,7 +19,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border: 1px solid black;
     padding: 20px;
 }
 
@@ -85,6 +84,13 @@ visit-profile{
     margin: 5px auto;
 }
 
+#loader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
 
 
 
@@ -99,6 +105,17 @@ visit-profile{
     input, button {
         width: 98%;
     }
+  }
+  
+  .card-container{
+      margin: 0 auto;
+  }
+
+  #card{
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
   }
 
 
@@ -121,9 +138,9 @@ visit-profile{
     }
   }
 
-  @media (min-width: 600px) {
+  @media (max-width: 600px) {
     .card{
-        margin: 5px auto;
+        margin: 15px auto;
     }
 
     .card-container { 
@@ -132,6 +149,10 @@ visit-profile{
         margin: 5px auto;
         align-items:center;
         text-align: center;
+    }
+
+    .card-body button{
+        font-size:14px;
     }
     
   }

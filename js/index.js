@@ -1,5 +1,19 @@
+
+
+
 function loadData () {
-    var url = "https://api.github.com/search/users?q=location:lagos+language:php&page=1&per_page=10";
+    document.getElementById('loader').style.visibility = 'visible';
+    var location = document.getElementById('location').value;
+    var language = document.getElementById('language').value;
+
+    if(location == "" || language ==""){
+        alert("Fields are required");
+        document.getElementById('loader').style.visibility = 'hidden';
+        return false;
+    } 
+
+    //event.preventDefault();
+    var url = `https://api.github.com/search/users?q=location:${location}+language:${language}&page=1&per_page=12`;
     var stringContent = '';
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -25,10 +39,10 @@ function loadData () {
        //document.getElementById("demo").innerHTML = xhttp.responseText;
        //console.log(data);
        document.querySelector('main').innerHTML = stringContent;
+       document.querySelector('.welcome-text').style.display = 'none';
+       document.getElementById('loader').style.display = 'none';
     }
 };
 xhttp.open("GET", url, true);
 xhttp.send();
 }
-
-loadData();
