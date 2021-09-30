@@ -100,7 +100,6 @@ visit-profile{
     section{
         flex-direction: column;
         padding: 5px;
-        background-color: #dcdcdd;
     }
     input, button {
         width: 98%;
