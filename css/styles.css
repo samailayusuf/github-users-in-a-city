@@ -91,6 +91,9 @@ visit-profile{
     display:none;
 }
 
+.error{
+    visibility: hidden;
+}
 
 
 
