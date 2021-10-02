@@ -4,10 +4,16 @@ function loadData () {
     var language = document.getElementById('language').value;
 
     if(location == "" || language ==""){
-        alert("Fields are required");
+        document.querySelector('.error-message').style.visibility = 'visible';
+        setTimeout(()=>{
+            document.querySelector('.error-message').style.visibility = 'hidden';
+        },3000);
+        //alert("Fields are required");
         document.getElementById('loader').style.visibility = 'hidden';
         return false;
-    } 
+    } else{
+        document.querySelector('.error-message').style.visibility = 'hidden';
+    }
 
     //event.preventDefault();
     var url = `https://api.github.com/search/users?q=location:${location}+language:${language}&page=1&per_page=12`;

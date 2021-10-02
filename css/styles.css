@@ -100,6 +100,15 @@ visit-profile{
     margin: 10px auto;
 }
 
+.error-message{
+    visibility: hidden;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
 
 
 
