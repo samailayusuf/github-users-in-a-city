@@ -24,7 +24,7 @@ function loadData () {
 
         if(this.status == 200){
             var data = JSON.parse(this.responseText);
-            console.log(data.items)
+            //console.log(data.items)
             data.items.map(user => {
                 stringContent += `
                 <div class="card">
