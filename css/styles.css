@@ -88,7 +88,7 @@ visit-profile{
     display:flex;
     justify-content: center;
     align-items: center;
-    display:none;
+    visibility:hidden;
 }
 
 .error{
