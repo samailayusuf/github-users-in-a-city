@@ -56,5 +56,5 @@ function loadData () {
 xhttp.open("GET", url, true);
 xhttp.send();
 
-//console.log(xhttp.status);
+
 }
